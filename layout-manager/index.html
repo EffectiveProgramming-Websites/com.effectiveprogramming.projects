@@ -1,0 +1,23 @@
+---
+layout: page
+title: Layout Manager
+active: true
+---
+
+This is a layout manager for iOS iPad applications. Amongst other things, the main idea is to simplify development around a layout DSL.
+
+<div class="milestones">
+	<h1>Milestone 01</h1>
+	<ul>
+		<li class="done">Basic layout</li>
+	</ul>
+</div>
+
+<div class="posts">
+	<h1>Layout Manager Posts</h1>
+	{% for post in site.categories.layout-manager %}
+	<p>
+		<span class="post-meta">{{ post.date | date: "%-d %b %Y" }}</span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>&nbsp;<span class="post-tags">{{ post.categories | join: ', ' }}</span>
+	</p>
+	{% endfor %}
+</div>

@@ -1,0 +1,18 @@
+---
+layout: page
+title: Jekyll Kanban Board
+active: true
+---
+
+<p>While tools like <a href="http://www.leankit.com">Lean Kit</a> <a href="http://www.kanbanize.com">Kanbanize</a> appear to be useful, I wanted something slightly less expensive and literally easier to own. My first attempt at this is to create a Kanban board over the <a href="http://jekyllrb.com">Jekyll</a> platform.</p>
+
+<p>It isn't a gem or <em>downloadable</em> per se as much as it is simply an example of one way to use Jekyll. It lives perpetually in all of my projects and honestly, it will likely differ between instances as I explore different ways to track stories.</p>
+
+<div class="posts">
+	<h1>Related Posts</h1>
+	{% for post in site.categories.jekyll-kanban-board %}
+	<p>
+		<span class="post-meta">{{ post.date | date: "%-d %b %Y" }}</span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>&nbsp;<span class="post-tags">{{ post.categories | join: ', ' }}</span>
+	</p>
+	{% endfor %}
+</div>

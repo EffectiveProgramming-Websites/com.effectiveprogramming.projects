@@ -1,5 +1,5 @@
 # Site settings
-title: Projects
+title: Effective Projects
 description: > # this means to ignore newlines until "baseurl:"
   Effective Programming Projects
 baseurl: "" # the subpath of your site, e.g. /blog/
